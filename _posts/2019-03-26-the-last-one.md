@@ -2,7 +2,7 @@
 layout: post
 excerpt_separator: <!--more-->
 title: CSS Tricks
-thumbnail: assets/photos/posts-photos/fire.jpg
+thumbnail: /assets/photos/posts-photos/fire.jpg
 author: Piotr Niezgoda
 categories: [jekyll, learn]
 readTime: 5min

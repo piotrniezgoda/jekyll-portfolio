@@ -2,7 +2,7 @@
 title: 'New Adventure #2'
 layout: post
 excerpt_separator: "<!--more-->"
-thumbnail: assets/photos/posts-photos/fire.jpg
+thumbnail: /assets/photos/posts-photos/fire.jpg
 permalink: /blog/:title
 ---
 
