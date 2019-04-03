@@ -15,7 +15,6 @@ fbButton.addEventListener('click', function() {
 
 twitterShare.addEventListener('click', () => {
   window.open('https://twitter.com/share?url=' + url, 'twitter-popup', 'height=350,width=600');
-  if(twitterWindow.focus) { twitterWindow.focus(); }
     return false;
 });
 

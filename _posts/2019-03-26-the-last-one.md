@@ -7,7 +7,8 @@ author: Piotr Niezgoda
 categories: [jekyll, learn]
 readTime: 5min
 permalink: /blog/:title
-shareDesc: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ut venenatis odio. Morbi eget mi tristique neque maximus auctor id et sem. Duis pellentesque ultrices risus...
+permalink: /blog/:title
+metaDesc: aaLorem ipsussm dolor sit amet, consectetur adipiscing elit. Vestibulum ut venenatis odio. Morbi eget mi tristique neque maximus auctor id et sem. Duis pellentesque ultrices risus, eu ullamcorper
 ---
 {: .post-text}
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ut venenatis odio. Morbi eget mi tristique neque maximus auctor id et sem. Duis pellentesque ultrices risus, eu ullamcorper nisi bibendum bibendum. Pellentesque blandit urna sapien, commodo efficitur lacus pharetra a. Nam vel purus eleifend, porta lorem vel, tincidunt eros.

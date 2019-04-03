@@ -7,7 +7,7 @@ author: Piotr Niezgoda
 categories: [jekyll, learn]
 readTime: 5min
 permalink: /blog/:title
-shareDesc: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ut venenatis odio. Morbi eget mi tristique neque maximus auctor id et sem. Duis pellentesque ultrices risus...
+metaDesc: Post testowy, to jest testowy opis. Powinien być bardzo długi - tak aby przetestować poprawne wyswietlanie. Jako iż nie mam pomysłu to wkleję lorem ipsum. No to cyk.Phasellus ac tortor nec erat vestibulum lobortis sed fermentum ante. Maecenas posuere, diam non malesuada feugiat, neque tellus ultrices magna, quis faucibus lacus risus in purus.
 ---
 {: .post-text}
 Post testowy sprawdzający działanie Continous deployment na netlify.

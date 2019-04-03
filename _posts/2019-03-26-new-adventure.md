@@ -4,6 +4,11 @@ layout: post
 excerpt_separator: "<!--more-->"
 thumbnail: /assets/photos/posts-photos/fire.jpg
 permalink: /blog/:title
+author: Piotr Niezgoda
+categories: [mars, wenus]
+readTime: 1min
+permalink: /blog/:title
+metaDesc: aaLorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ut venenatis odio. Morbi eget mi tristique neque maximus auctor id et sem. Duis pellentesque ultrices risus, eu ullamcorper
 ---
 
 {: .post-text}
