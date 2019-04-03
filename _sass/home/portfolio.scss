@@ -1,0 +1,153 @@
+.portfolio {
+  background: #000;
+  @include backgroundImg('../photos/paper-bg.jpg');
+  overflow: hidden;
+}
+
+.portfolio__header {
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: url('../svg/portfolio-case.svg');
+    top: -64px;
+    right: -64px;
+  }
+}
+
+.portfolio__slider {
+  max-width: 1420px;
+  margin: 0 auto;
+}
+
+.portfolio__work {
+  background: $darkBlue;
+  color: #fff;
+  padding: 0 0 4.25rem 0;
+  overflow: hidden;
+  border-radius: 0.8125rem;
+  height: 520px;
+  margin: 0 0.5rem;
+}
+.work__image {
+  width: 100%;
+}
+
+.slide {
+  color: #fff;
+}
+
+.work__title {
+  color: $yellow;
+  font-weight: 700;
+  text-align: center;
+  margin: 1.625rem 0;
+}
+
+.work__desc {
+  font-weight: 300;
+  line-height: 1.3625rem;
+  height: 8rem;
+  overflow-y: scroll;
+  padding: 0 0.4rem;
+
+  &::-webkit-scrollbar {
+    width: 0.3em;
+  }
+  &::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  }
+  &::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: $orange;
+    outline: 1px solid slategrey;
+    }
+}
+
+.work-padding {
+  padding: 0 0.8125rem;
+}
+
+.work__links-container {
+  display: flex;
+  margin-top: 2.625rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.work__link {
+  text-transform: uppercase;
+  border-radius: 20px;
+  background: transparent;
+  border: 1px solid #eee;
+
+  &:first-child {
+    margin-bottom: 16px;
+  }
+}
+
+.slider__arrows {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1420px;
+  margin: 0 auto;
+}
+
+.slide-arrow--right {
+  transform: rotate(180deg);
+}
+
+.slide__arrow {
+  background: transparent;
+  border: none;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+.arrows__info {
+  font-size: 0.875rem;
+  opacity: 0.5;
+  color: #fff;
+}
+
+.slider__dots {
+  max-width: 1420px;
+  margin: 2rem auto 0 auto;
+}
+
+
+.slick-dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  >li {
+    width: 14px;
+    height: 14px;
+    >button {
+      background: transparent;
+      border-radius: 50%;
+      width: 14px;
+      height: 14px;
+      border: none;
+      background: #383838;
+      color: #383838;
+      text-indent: -99999px;
+      cursor: pointer;
+    }
+  }
+  >li.slick-active {
+    >button {
+      border: 1px solid $orange;
+      background: $orange;
+    }
+  }
+  >li:not(:last-child) {
+    margin-right: 0.3rem;
+  }
+}
+

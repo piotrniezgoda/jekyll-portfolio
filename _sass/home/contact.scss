@@ -1,0 +1,122 @@
+.home__contact {
+  @include backgroundImg('../photos/paper-bg.jpg');
+  overflow: hidden;
+  padding-bottom: 5rem;
+}
+
+.contact__form {
+  max-width: 43.75rem;
+  margin: 0 auto;
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: url('../svg/mail-icon.svg');
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(15) rotate(-30deg);
+    opacity: 0.07;
+  }
+}
+
+.form-column {
+  display: flex;
+  flex-flow: column;
+  align-items: flex-start;
+  position: relative;
+  z-index: 10;
+}
+.form__input {
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #D6D8C9;
+  padding: 0.3rem 0.75rem;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  box-sizing: border-box;
+
+  &::placeholder {
+    opacity: .5;
+  }
+
+  &:focus {
+    border-bottom: 1px solid $yellow;
+    outline: none;
+  }
+}
+
+.form__textarea {
+  height: 9.8rem;
+  resize: none;
+  box-sizing: border-box;
+  font-size: 1rem;
+  line-height: 1.3625rem;
+  width: 100%;
+  color: #fff;
+  background: transparent;
+  border: 1px solid #D6D8C9;
+  padding: 0.75rem;
+  font-family: 'Montserrat', sans-serif;
+
+  &::placeholder {
+    opacity: .5;
+  }
+
+  &:focus {
+    border: 1px solid $yellow;
+    outline: none;
+  }
+}
+
+.form__label {
+  margin-bottom: 1.5rem;
+  color: #fff;
+
+  &:not(:first-child) {
+    margin-top: 1.53rem;
+  }
+
+  &--first-column {
+    margin-top: 1.53rem;
+  }
+}
+
+.form__button-container {
+  text-align: center;
+  margin-top: 3.1rem;
+  position: relative;
+  z-index: 10;
+}
+
+.form__input:valid {
+  border-bottom: 1px solid #bada55;
+}
+
+.contact__mail {
+  color: #fff;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+
+  &:hover, &:focus {
+    color: $orange;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  &::before {
+    content: url('../svg/mail-icon.svg');
+    position: absolute;
+    left: -30px;
+    top: 50%;
+    transform: translateY(-40%);
+  }
+
+}
+
+.form__center-container {
+  margin-top: 3.37rem;
+  text-align: center;
+}

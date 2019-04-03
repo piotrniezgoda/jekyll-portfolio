@@ -1,0 +1,48 @@
+.article__photo-container {
+  border-radius: 0 70px;
+  overflow: hidden;
+
+}
+
+.article__photo-border-container {
+  position: relative;
+  max-width: 90%;
+  margin: 0 auto;
+
+  &::after {
+    position: absolute;
+    width: 48%;
+    height: 48%;
+    left: -12px;
+    top: -12px;
+    content: '';
+    background: linear-gradient(to right, $yellow, $orange);
+    z-index: -1;
+  }
+}
+
+.about__article {
+  max-width: 475px;
+  margin: 0 auto;
+}
+
+.article__content {
+  padding: 2.3125rem 0 0 0;
+}
+
+.article__photo {
+  width: 100%;
+}
+
+.article__title {
+  font-weight: 700;
+  margin-bottom: 1.875rem;
+}
+
+.article__paragraph {
+  line-height: 1.3125rem;
+}
+
+.article__paragraph:not(:last-child) {
+  margin-bottom: 1.58rem;
+}

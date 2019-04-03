@@ -1,0 +1,33 @@
+<section id="portfolio" class="section portfolio">
+  <header class="section__header portfolio__header">
+    {%- for content in site.data.site_texts -%}
+      {%- if content.section == "Portfolio" -%}
+        <h2 class="section__title section__title--white">{{ content.section }}</h2>
+        <p class="section__subtitle section__subtitle--white">{{ content.sectionSubtitle }}</p>
+      {%- endif -%}
+    {%- endfor -%}
+  </header>
+  <div class="portfolio__slider">
+    {%- for work in site.data.portfolio -%}
+      <article class="portfolio__work">
+        <div class="work__image-container">
+          <img class="work__image lazy" data-src="{{ work.imgUrl }}" alt="{{ work.imgAlt }}">
+        </div>
+        <div class="work-padding">
+          <h3 class="work__title">{{ work.title }}</h3>
+          <p class="work__desc">{{ work.desc }}</p>
+          <div class="work__links-container">
+            <a target="_blank" href="{{ work.liveUrl }}" class="link-button work__link">live</a>
+            <a target="_blank" href="{{ work.codeUrl }}" class="link-button work__link">code</a>
+          </div>
+        </div>
+      </article>
+    {%- endfor -%}
+  </div>
+  <div class="slider__dots"></div>
+  <div class="slider__arrows">
+    <button class="slide__arrow slide__arrow--left"><img class="slide-arrow slide-arrow--left" src="assets/svg/slide-arrow.svg" alt="slide left arrow"></button>
+    <span class="arrows__info">Przesuń, lub użyj strzałek</span>
+    <button class="slide__arrow slide__arrow--right"><img class="slide-arrow slide-arrow--right" src="assets/svg/slide-arrow.svg" alt="slide right arrow"></button>
+  </div>
+</section>

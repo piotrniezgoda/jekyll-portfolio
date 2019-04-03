@@ -1,0 +1,21 @@
+- section: O Mnie
+  sectionSubtitle: kilka słów...
+  articleTitle: Coś o mnie
+  articleParagraph1: Zajmuję tworzeniem stron i aplikacji internetowych. Przygodę z front-endem rozpocząłem wiosną 2017 roku. W tym czasie poczyniłem pewne postępy, jednak wciąż staram się rozwijać.
+  articleParagraph2: Z każdym projektem staram się udoskonalać mój kod, i próbować różnych pomysłów i rozwiązań. W sekcji Poniżej można pobrać moje CV, oraz zobaczyć prezentację wybranych najciekawszych projektów :)
+
+- section: Portfolio
+  sectionSubtitle: Wybrane prace
+
+- section: Blog
+  sectionSubtitle: Co nowego na blogu?
+
+- section: Kontakt
+  sectionSubtitle: Porozmawiajmy
+  sectionParagraph: Jeżeli spodobało Ci się moje portfolio - zapraszam do kontaktu. Skorzystaj z formularza, lub napisz bezpośrednio na adres email a ustalimy wszystkie szczegóły.
+
+- section: Footer
+  rights: Code&Design Piotr Niezgoda
+  year: 2019
+
+

@@ -1,0 +1,8 @@
+<footer class="blog__footer">
+  {%- for content in site.data.site_texts -%}
+    {%- if content.section == "Footer" -%}
+      <p class="footer__text footer__author"><a class="footer__link" href="/">{{ content.rights }}</a></p>
+      <p class="footer__text footer__year">{{ content.year }}</p>
+    {%- endif -%}
+  {%- endfor -%}
+</footer>

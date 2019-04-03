@@ -1,0 +1,80 @@
+@import 'blog/blog_header';
+@import 'blog/blog_footer';
+
+
+.pageinfo {
+  padding: 7.6rem 0 5.5rem 0;
+}
+
+.page-title {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: $orange;
+  font-weight: 700;
+}
+
+.page-desc {
+  color: $grey;
+  line-height: 1.4rem;
+}
+
+.pageinfo__article {
+  padding: 7.6rem 0rem 0rem 0;
+}
+
+.pageInfo__article-title {
+  color: $orange;
+  font-size: 1.4rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+
+.pageinfo__list {
+  padding: 1rem 0 0rem 1rem;
+  list-style: disc;
+}
+
+.pageinfo__list-item:not(:last-child) {
+  margin-bottom: 1.5rem;
+}
+
+.list__question {
+  margin-bottom: 0.4rem;
+  color: #ad003e;
+  font-weight: 700;
+}
+
+.list__answer {
+  color: $grey;
+  line-height: 1.3rem;
+}
+
+.list__link {
+  color: #601be2;
+  font-weight: 700;
+
+  &:hover, &:focus {
+    color: #027488;
+  }
+}
+
+.center-button {
+  margin-top: 8rem;
+}
+
+.pageinfo__linkBack {
+  padding: 0.7rem 1.8rem;
+  border: 1px solid $grey;
+  border-radius: 1.4375rem;
+  text-decoration: none;
+  color: $grey;
+
+  &:hover, &:focus {
+    color: #fff;
+    border: none;
+    background: linear-gradient(to right, $yellow, $orange);
+    outline: none;
+    box-shadow: 0 0 8px rgba(0,0,0,0.35);
+  }
+}

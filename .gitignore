@@ -1,0 +1,7 @@
+*.gem
+.bundle
+.sass-cache
+Gemfile.lock
+public
+_site
+node_modules

@@ -1,0 +1,28 @@
+.home__footer {
+  padding: 2.81rem 1.125rem 0.8rem 1.125rem;
+  background: $darkBlue;
+  position: relative;
+  text-align: center;
+  color: #fff;
+}
+
+.footer__scrollup {
+  position: absolute;
+  left: 50%;
+  top: 0%;
+  transform: translate(-50%, -50%);
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  background: linear-gradient(to bottom, $yellow, $orange);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 6px $orange;
+}
+
+.footer__text {
+  font-size: 0.6875rem;
+  font-weight: 300;
+  line-height: 1rem;
+}

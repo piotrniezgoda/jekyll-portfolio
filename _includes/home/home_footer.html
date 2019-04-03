@@ -1,0 +1,9 @@
+<footer class="home__footer">
+  <a class="footer__scrollup" href="#start"><img class="footer__arrowscroll link--closeNav" src="assets/svg/arrow_white.svg" alt="scroll to top"></a>
+  {%- for content in site.data.site_texts -%}
+    {%- if content.section == "Footer" -%}
+      <p class="footer__text footer__author">{{ content.rights }}</p>
+      <p class="footer__text footer__year">{{ content.year }}</p>
+    {%- endif -%}
+  {%- endfor -%}
+</footer>

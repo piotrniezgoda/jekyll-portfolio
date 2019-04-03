@@ -1,0 +1,31 @@
+<header id="start" class="homeHeader">
+  <nav id="navBar" class="homeHeader__navbar">
+    <button id="hamburgerBtn" class="navbar__hamburgerBtn">
+      <svg class="burger_svg" xmlns="http://www.w3.org/2000/svg" width="27.135" height="20.057" viewBox="0 0 27.135 20.057">
+        <g transform="translate(-339.666 -23.101)">
+          <rect class="burger_line burger_line1" width="27.135" height="4.719" rx="2.36" transform="translate(339.666 23.101)"/>
+          <rect class="burger_line burger_line2" width="27.135" height="4.719" rx="2.36" transform="translate(339.666 30.769)"/>
+          <rect class="burger_line burger_line3" width="27.135" height="4.719" rx="2.36" transform="translate(339.666 38.438)"/>
+        </g>
+      </svg>
+    </button>
+    <ul id="menuList" class="navbar__menu navbar__menu--hidden">
+      <li class="menu__item"><a href="#o-mnie" class="menu__link link--closeNav">O Mnie</a></li>
+      <li class="menu__item"><a href="#portfolio" class="menu__link link--closeNav">Portfolio</a></li>
+      <li class="menu__item"><a href="/blog" class="menu__link text--new link--closeNav">Blog</a></li>
+      <li class="menu__item"><a href="#kontakt" class="menu__link link--closeNav">kontakt</a></li>
+    </ul>
+  </nav>
+  <div class="header-titles-container container--center">
+    <h1 class="homeHeader__title">{{ page.siteTitle }}</h1>
+    <p class="homeHeader__subtitle">{{ page.siteSubtitle }}</p>
+  </div>
+  <div class="header-subtitles-container container--center">
+    <p class="homeHeader__shortcutTitle">{{ page.shortcutTitle }}</p>
+    <p class="homeHeader__shortcutSubtitle">{{ page.shortcutSubtitle }}</p>
+    <a href="#portfolio" class="link-button homeHeader__button link--closeNav">portfolio</a>
+  </div>
+  <a href="#o-mnie" class="moveArrow homeHeader__moveArrow link--closeNav">
+    <img src="assets/svg/moveArrow.svg" alt="scroll site down to next section">
+  </a>
+</header>

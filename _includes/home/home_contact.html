@@ -1,0 +1,37 @@
+<section id="kontakt" class="section home__contact">
+    <header class="section__header">
+        {%- for content in site.data.site_texts -%}
+          {%- if content.section == "Kontakt" -%}
+            <h2 class="section__title section__title--white">{{ content.section }}</h2>
+            <p class="section__subtitle section__subtitle--white">{{ content.sectionSubtitle }}</p>
+            <p class="section_paragraph section_paragraph--white">{{ content.sectionParagraph }}</p>
+          {%- endif -%}
+        {%- endfor -%}
+      </header>
+      <form class="contact__form" action="https://formspree.io/p.niezgoda@hotmail.com" method="POST">
+        <div class="form__flexcontainer">
+          <div class="form-column">
+            <label class="form__label" for="name">Imię*</label>
+            <input class="form__input" id="name" type="text" name="name" placeholder="Twoje imię..." required>
+
+            <label class="form__label" for="email">Adres email*</label>
+            <input class="form__input" id="email" type="email" name="_replyto" placeholder="Twój adres email..." required>
+
+            <label class="form__label" for="topic">Temat*</label>
+            <input class="form__input" id="topic" type="text" name="topic" placeholder="Temat wiadomości..." required>
+          </div>
+          <div class="form-column">
+            <label class="form__label form__label--first-column" for="message">Wiadomość*</label>
+            <textarea class="form__textarea" id="message" name="message" placeholder="Treść wiadomości..." required></textarea>
+          </div>
+        </div>
+        <div class="form__button-container">
+          <button class="link-button" type="submit">Wyślij</button>
+        </div>
+      </form>
+      <div class="form__center-container">
+        <a class="contact__mail" href="mailto:p.niezgoda@hotmail.com">p.niezgoda@hotmail.com</a>
+      </div>
+
+
+</section>

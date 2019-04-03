@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="assets/favicons/apple-icon-57x57.png" rel="apple-touch-icon" sizes="57x57">
+  <link href="assets/favicons/apple-icon-60x60.png" rel="apple-touch-icon" sizes="60x60">
+  <link href="assets/favicons/apple-icon-72x72.png" rel="apple-touch-icon" sizes="72x72">
+  <link href="assets/favicons/apple-icon-76x76.png" rel="apple-touch-icon" sizes="76x76">
+  <link href="assets/favicons/apple-icon-114x114.png" rel="apple-touch-icon" sizes="114x114">
+  <link href="assets/favicons/apple-icon-120x120.png" rel="apple-touch-icon" sizes="120x120">
+  <link href="assets/favicons/apple-icon-144x144.png" rel="apple-touch-icon" sizes="144x144">
+  <link href="assets/favicons/apple-icon-152x152.png" rel="apple-touch-icon" sizes="152x152">
+  <link href="assets/favicons/apple-icon-180x180.png" rel="apple-touch-icon" sizes="180x180">
+  <link href="assets/favicons/android-icon-192x192.png" rel="icon" sizes="192x192" type="image/png">
+  <link href="assets/favicons/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png">
+  <link href="assets/favicons/favicon-96x96.png" rel="icon" sizes="96x96" type="image/png">
+  <link href="assets/favicons/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png">
+  <meta content="#ffffff" name="msapplication-TileColor">
+  <meta content="assets/favicons/ms-icon-144x144.png" name="msapplication-TileImage">
+  <meta content="#FF5F6D" name="theme-color">
+  <title>{{ site.title }}</title>
+  <meta name="description" content="{{ site.description }}">
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700&amp;subset=latin-ext" rel="stylesheet">
+</head>
+<body>
+  <div class="site-wrapper">
+    {%- if page.home_header -%}
+      {%- include {{ page.home_header }} -%}
+    {%- endif -%}
+    <main class="main">
+      {%- if page.home_about -%}
+        {%- include {{ page.home_about }} -%}
+      {%- endif -%}
+      {%- if page.home_portfolio -%}
+        {%- include {{ page.home_portfolio }} -%}
+      {%- endif -%}
+      {%- if page.home_blog -%}
+        {%- include {{ page.home_blog }} -%}
+      {%- endif -%}
+      {%- if page.home_contact -%}
+        {%- include {{ page.home_contact }} -%}
+      {%- endif -%}
+    </main>
+    {%- if page.home_footer -%}
+      {%- include {{ page.home_footer }} -%}
+    {%- endif -%}
+  </div>
+  <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.11/lodash.min.js" integrity="sha256-7/yoZS3548fXSRXqc/xYzjsmuW3sFKzuvOCHd06Pmps=" crossorigin="anonymous"></script>
+  <script src="assets/js/debounce.js"></script>
+  <script src="assets/js/navigation.js"></script>
+  <script src="assets/js/portfolio.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@11.0.6/dist/lazyload.min.js"></script>
+  <script src="assets/js/lazyload.js"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+</body>
+</html>

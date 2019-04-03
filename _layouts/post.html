@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>{{ page.title }}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta property="og:url" content="{{ page.url }}" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="{{ page.title }}" />
+  <meta property="og:description" content="{{ page.desc }}" />
+  <meta property="og:image" content="{{ page.thumbnail }}" />
+  <meta name="description" content="{{ page.desc }}">
+  <link rel="stylesheet" href="assets/css/post.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700&amp;subset=latin-ext" rel="stylesheet">
+  <script defer src="assets/js/sharePost.js"></script>
+</head>
+<body>
+  <div class="blog-siteWrapper">
+      {%- include blog/blog_header.html -%}
+    <main class="blogpost">
+      <article class="blogpost__post-content">
+        <header class="blogpost__header">
+          <div class="post__image-container">
+            <img class="post__image" src="{{ page.thumbnail }}" alt="{{ page.alt }}">
+          </div>
+          <div class="blogpost__titlebar">
+            <a href="/blog/" class="blogpost__backlink">Wstecz</a>
+            <h2 class="blogpost__title">{{ page.title }}</h2>
+              {{ page.excerpt }}
+          </div>
+        </header>
+        <div class="post-padding">
+          {{ content }}
+
+          <ul class="postblogpost__informations">
+            <li class="blogpost__information">Data publikacji: <time datetime="{{ page.date | date: '%Y-%m-%d' }}">{{ page.date | date: '%m.%Y' }}</time></li>
+            <li class="blogpost__information">Autor: {{ page.author }}</li>
+            <li class="blogpost__information">Kategorie: {{ page.categories }}</li>
+            <li class="blogpost__information">Śr. czas czytania: {{ page.readTime }}</li>
+          </ul>
+          <span class="shareinfo">Udostępnij post:</span>
+          <ul class="sharebuttons">
+            <li class="share-listitem">
+              <a title="facebook Share" id="fb-share-button" class="share-button share-button--facebook"><img class="share-icon" src="assets/svg/facebook-logo.svg" alt="">Facebook</a>
+            </li>
+            <li class="share-listitem">
+              <a title="twitter Share" id="twitter-share-button" class="share-button share-button--twitter"><img class="share-icon share-icon--twitter" src="assets/svg/twitter-logo.svg" alt="">Twitter</a>
+            </li>
+            <li class="share-listitem">
+              <a title="linkedin Share" target="_blank" id="linkedin-share-button" class="share-button share-button--linkedin"><img class="share-icon share-icon--linkedin" src="assets/svg/linkedin-logo.svg" alt="">LinkedIn</a>
+            </li>
+          </ul>
+          <div class="link-back-container">
+              <a href="/blog/" class="link-back">Wstecz</a>
+          </div>
+
+        </div>
+      </article>
+    </main>
+  </div>
+    {%- include blog/blog_footer.html -%}
+</body>
+</html>

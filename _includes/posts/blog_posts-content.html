@@ -1,0 +1,13 @@
+<section class="allposts">
+  <h2 class="blog__section-title">Wszystkie posty</h2>
+    {%- for post in site.posts -%}
+    <article class="posts__article">
+      <div data-bg="url('../{{ post.thumbnail }}')" class="image-container lazy"></div>
+      <div class="posts__article-desc">
+        <h3 class="posts__article-title"><a class="posts__header-link" href="{{ post.url }}">{{ post.title }}</a></h3>
+        {{ post.excerpt | truncate: 300 }}
+        <span class="posts__article-date"><time datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date: '%m.%Y' }}</time></span>
+      </div>
+    </article>
+  {%- endfor -%}
+</section>

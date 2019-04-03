@@ -1,0 +1,48 @@
+- title: Weather App
+  desc: Aplikacja pogodowa, dzięki której możemy sprawdzić aktualną pogodę w miastach na całym świecie. Aplikacja została stworzona przy pomocy Vue.js.
+  imgUrl: assets/photos/weather.jpg
+  imgAlt: screen podglądowy wykonanego projektu
+  liveUrl: https://whatweather.netlify.com/
+  codeUrl: https://github.com/piotrniezgoda/weatherApp
+
+- title: Strona dla klanu Xengaming
+  desc: Jest to szybki i dosyć spontaniczny projekt przykładowej strony dla klanu Xengaming. Prosta, statyczna strona zawierająca w obecnej formie jedynie stronę startową. Być może, strona kiedyś zostanie rozbudowana. Własny design strony :).
+  imgUrl: assets/photos/xen.jpg
+  imgAlt: screen podglądowy wykonanego projektu
+  liveUrl: https://piotrniezgoda.github.io/xengaming
+  codeUrl: https://github.com/piotrniezgoda/xengaming/tree/master/src
+
+- title: Strona dla stolarza
+  desc: Strona-wizytówka typu onepage. Z uwagi na szeroki zakres wieku grupy docelowej, w projekcie tym starałem się przyłożyć większą uwagę do dostępności strony. Jeden z dawniejszych projektów.
+  imgUrl: assets/photos/carpenter.jpg
+  imgAlt: screen podglądowy wykonanego projektu
+  liveUrl: https://piotrniezgoda.github.io/carpenter/
+  codeUrl: https://github.com/piotrniezgoda/carpenter/tree/master/src
+
+- title: Treehouse
+  desc: Treehouse to darmowy layout w pliku .psd, pocięty zakodowany od podstaw.
+  imgUrl: assets/photos/treehouse.jpg
+  imgAlt: screen podglądowy wykonanego projektu
+  liveUrl: https://piotrniezgoda.github.io/treehouse/
+  codeUrl: https://github.com/piotrniezgoda/treehouse
+
+- title: Symulator lotto
+  desc: Symulator losowania lotto, losuje 6 liczb od 1 do 49 bez powtórzeń. Można także wpisać swoje szczęśliwe liczby i sprawdzić czy trafiliśmy.
+  imgUrl: assets/photos/lotto.jpg
+  imgAlt: screen podglądowy wykonanego projektu
+  liveUrl: https://piotrniezgoda.github.io/lottosimulator/
+  codeUrl: https://github.com/piotrniezgoda/lottosimulator
+
+- title: Star Wars Cards - SWAPI
+  desc: aplikacja, gdzie możemy sprawdzić podstawowe informacje o 10 postaciach z uniwersum gwiezdnych wojen, takie jak&#58; rok urodzenia, waga, wzrost, płeć, kolor włosów. Wykorzystane zostało tutaj <a target="_blank" class="text-link" href="https://swapi.co/">SWAPI</a>
+  imgUrl: assets/photos/starwars.jpg
+  imgAlt: screen podglądowy wykonanego projektu
+  liveUrl: https://piotrniezgoda.github.io/swcards/
+  codeUrl: https://github.com/piotrniezgoda/swcards
+
+- title: Data chart
+  desc: Pomysł na aplikację powstał spontanicznie. Chciałem móc generować wykres, na podstawie wprowadzonych danych i mieć do niego dostęp po przeładowaniu strony, oraz z każdego urządzenia. Dlatego użyłem <a target="_blank" class="text-link" href="https://firebase.google.com/">Firebase</a>, do przechowywania danych w bazie danych, oraz do logowania, a także bibliotekę Chart.js do rysowania wykresu. Wykres wizualizuje winn/loss ratio. Aplikacja jest wciąż w stanie wip (work in progress). Dane do testowego konta w aplikacji, login&#58; <span class="text-important">peterparker@gmail.com</span> hasło&#58; <span class="text-important">Spider@Man_22^</span>
+  imgUrl: assets/photos/ratio.jpg
+  imgAlt: screen podglądowy wykonanego projektu
+  liveUrl: https://piotrniezgoda.github.io/chart/
+  codeUrl: https://github.com/piotrniezgoda/chart

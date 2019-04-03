@@ -1,0 +1,26 @@
+<section id="o-mnie" class="section about">
+  <header class="section__header">
+    {%- for content in site.data.site_texts -%}
+      {%- if content.section == "O Mnie" -%}
+        <h2 class="section__title">{{ content.section }}</h2>
+        <p class="section__subtitle">{{ content.sectionSubtitle }}</p>
+      {%- endif -%}
+    {%- endfor -%}
+  </header>
+  <article class="about__article">
+    <div class="article__photo-border-container">
+        <div class="article__photo-container">
+          <img class="article__photo lazy" data-src="assets/photos/pn-photo.jpg" alt="Piotr Niezgoda - zdjęcie czarno-białe">
+        </div>
+    </div>
+    <div class="article__content">
+        {%- for content in site.data.site_texts -%}
+        {%- if content.section == "O Mnie" -%}
+          <h3 class="article__title">{{ content.articleTitle }}</h3>
+          <p class="article__paragraph">{{ content.articleParagraph1 }}</p>
+          <p class="article__paragraph">{{ content.articleParagraph2 }}</p>
+        {%- endif -%}
+      {%- endfor -%}
+    </div>
+  </article>
+</section>
