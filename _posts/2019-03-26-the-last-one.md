@@ -6,7 +6,7 @@ thumbnail: assets/photos/posts-photos/fire.jpg
 author: Piotr Niezgoda
 categories: [jekyll, learn]
 readTime: 5min
-permalink: /:title
+permalink: /blog/:title
 shareDesc: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ut venenatis odio. Morbi eget mi tristique neque maximus auctor id et sem. Duis pellentesque ultrices risus...
 ---
 {: .post-text}

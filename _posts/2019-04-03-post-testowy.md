@@ -1,14 +1,20 @@
 ---
 layout: post
 excerpt_separator: <!--more-->
-title: JS - what's new?
+title: Post testowy
 thumbnail: assets/photos/posts-photos/fire.jpg
+author: Piotr Niezgoda
+categories: [jekyll, learn]
+readTime: 5min
 permalink: /blog/:title
+shareDesc: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ut venenatis odio. Morbi eget mi tristique neque maximus auctor id et sem. Duis pellentesque ultrices risus...
 ---
 {: .post-text}
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ut venenatis odio. Morbi eget mi tristique neque maximus auctor id et sem. Duis pellentesque ultrices risus, eu ullamcorper nisi bibendum bibendum. Pellentesque blandit urna sapien, commodo efficitur lacus pharetra a. Nam vel purus eleifend, porta lorem vel, tincidunt eros.
+Post testowy sprawdzający działanie Continous deployment na netlify.
 <!--more-->
 Phasellus ac tortor nec erat vestibulum lobortis sed fermentum ante. Maecenas posuere, diam non malesuada feugiat, neque tellus ultrices magna, quis faucibus lacus risus in purus. Donec sed pharetra leo, a mattis nibh. Curabitur vehicula luctus leo id aliquam. Praesent maximus orci at nibh tincidunt, ac pharetra arcu iaculis. Quisque feugiat vitae lacus non molestie. Vivamus nec lobortis tortor, ut porta sem. Sed vehicula metus vitae leo dignissim lacinia. Vivamus hendrerit lacus ac massa fringilla, varius faucibus nibh convallis. Etiam aliquet velit vel risus tempor, non viverra ex commodo.
+
+![My helpful screenshot](/assets/photos/posts-photos/testimg.jpg){:class="post-image"}
 
 {: .post-text}
 Maecenas sed blandit justo. Nam sodales dui quis risus interdum, non condimentum dolor aliquam. Nullam tristique magna at erat vehicula consequat. Maecenas congue turpis sem, a elementum lacus tempus sed. Maecenas ac nunc turpis. Vivamus tristique placerat accumsan. In fermentum arcu in aliquet convallis. Mauris et tellus a dolor dignissim posuere.

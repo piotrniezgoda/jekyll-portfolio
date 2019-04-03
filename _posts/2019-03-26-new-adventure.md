@@ -3,7 +3,7 @@ title: 'New Adventure #2'
 layout: post
 excerpt_separator: "<!--more-->"
 thumbnail: assets/photos/posts-photos/fire.jpg
-permalink: /:title
+permalink: /blog/:title
 ---
 
 {: .post-text}

@@ -36,8 +36,10 @@
           <ul class="postblogpost__informations">
             <li class="blogpost__information">Data publikacji: <time datetime="{{ page.date | date: '%Y-%m-%d' }}">{{ page.date | date: '%m.%Y' }}</time></li>
             <li class="blogpost__information">Autor: {{ page.author }}</li>
-            <li class="blogpost__information">Kategorie: {{ page.categories }}</li>
-            <li class="blogpost__information">Śr. czas czytania: {{ page.readTime }}</li>
+            <li class="blogpost__information">Kategorie: {{ page.categories | join " " }}</li>
+            {%- if page.readTime -%}
+              <li class="blogpost__information">Śr. czas czytania: {{ page.readTime }}</li>
+            {%- endif -%}
           </ul>
           <span class="shareinfo">Udostępnij post:</span>
           <ul class="sharebuttons">
