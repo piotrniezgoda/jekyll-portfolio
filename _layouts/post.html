@@ -49,10 +49,11 @@
         <div class="post-padding">
           {{ content }}
 
+        <footer class="post-footer">
           <ul class="postblogpost__informations">
             <li class="blogpost__information">Data publikacji: <time datetime="{{ page.date | date: '%Y-%m-%d' }}">{{ page.date | date: '%m.%Y' }}</time></li>
             <li class="blogpost__information">Autor: {{ page.author }}</li>
-            <li class="blogpost__information">Kategorie: {{ page.categories | join " " }}</li>
+            <li class="blogpost__information">Kategorie: {{ page.categories | join: ", " }}</li>
             {%- if page.readTime -%}
               <li class="blogpost__information">Śr. czas czytania: {{ page.readTime }}</li>
             {%- endif -%}
@@ -72,6 +73,7 @@
           <div class="link-back-container">
               <a href="/blog/" class="link-back">Wstecz</a>
           </div>
+        </footer>
 
         </div>
       </article>
